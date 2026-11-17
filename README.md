@@ -24,10 +24,12 @@ Other asbplayer shortcuts: `Ctrl+Shift+X` mine via asbplayer dialog · `←/→`
 1. **Install** Chrome, then [Yomitan](https://chromewebstore.google.com/detail/yomitan/likgccmbimhjbgkjambclfkhldnlhbnn) and [asbplayer](https://chromewebstore.google.com/detail/asbplayer-language-learnin/hkledmpjpaehamkiehglnbelcpdflcab) from the Chrome Web Store.
 2. **Anki**: install Anki → *Tools > Add-ons > Get Add-ons* → code `2055492159` (AnkiConnect) → *Config* → paste `anki/ankiconnect-config.json` → restart Anki.
 3. **Card template**: with Anki open, run `node anki/setup-anki.mjs` (creates note type `Lapis` + deck `Mining`). Alternative: *File > Import* `anki/lapis/Lapis-1.7.0.apkg`.
-4. **Yomitan settings first** (important — importing settings later disables dictionaries not listed in the file):
-   Yomitan settings → *Backup* → **Import Settings** → `yomitan/yomitan-settings.json`.
-5. **Dictionaries**: `powershell -ExecutionPolicy Bypass -File dictionaries\download.ps1`, then Yomitan settings → *Dictionaries* → *Configure installed and enabled dictionaries…* → **Import** → select all 7 zips in `dictionaries/` (order by filename).
+4. **Dictionaries first**: `powershell -ExecutionPolicy Bypass -File dictionaries\download.ps1`, then Yomitan settings → *Dictionaries* → *Configure installed and enabled dictionaries…* → **Import** → select all 7 zips in `dictionaries/` (order by filename).
+   (The zips are git-ignored, so they only exist locally after running the script.)
+5. **Then Yomitan settings**: Yomitan settings → *Backup* → **Import Settings** → `yomitan/yomitan-settings.json`.
+   The file lists the dictionaries by exact title, which sets their priority order. On import, dictionaries that aren't installed are dropped from the list, and installed dictionaries the file doesn't name get added **disabled**. So import the dictionaries first, and re-import the settings whenever you add a dictionary.
    If you get newer dictionary versions, their titles change (e.g. `Jitendex.org [2026-10-03]`): edit the names at the top of `yomitan/build-settings.mjs` and run `node yomitan/build-settings.mjs` to regenerate the settings file.
+   **Check it worked:** Anki section shows card format *Lapis* → deck *Mining*, model *Lapis*; popup theme is *Dark*; Jitendex is first in the dictionary list.
 6. **asbplayer settings**: click the asbplayer icon → *Settings* → *Misc* → **Import settings** → `asbplayer/asbplayer-settings.json`.
 7. Test: Yomitan settings → *Anki* → the status should say *Connected*; hover a word and click ➕.
 

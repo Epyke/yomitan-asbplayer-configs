@@ -14,10 +14,10 @@ const SENTENCE_FIELDS = ['Sentence'];          // all three note types
 const STATUS = [
     {display: true, color: '#FF0000', alpha: 'FF'}, // not in Anki at all  -> red
     {display: true, color: '#FFA500', alpha: 'FF'}, // in Anki, never studied -> orange
-    {display: true, color: '#FFFF00', alpha: 'FF'}, // learning              -> yellow
-    {display: true, color: '#00FF00', alpha: 'FF'}, // just graduated        -> green
+    {display: true, color: '#3399FF', alpha: 'FF'}, // learning              -> blue
+    {display: true, color: '#3399FF', alpha: 'FF'}, // just graduated        -> blue
     {display: true, color: '#3399FF', alpha: 'FF'}, // young (< 21 days)     -> blue
-    {display: false, color: '#FFFFFF', alpha: 'FF'}, // mature (>= 21 days)  -> no mark
+    {display: true, color: '#00FF00', alpha: 'FF'}, // mature (>= 21 days)   -> green
 ];
 
 const off = () => ({reading: false, frequency: false, gloss: false, pitchAccent: false});
@@ -55,7 +55,7 @@ function track(enabled) {
         dictionaryWaniKaniApiToken: '',
         dictionaryTokenStyling: 'UNDERLINE',
         dictionaryTokenStylingThickness: 3,
-        dictionaryColorizeFullyKnownTokens: false,
+        dictionaryColorizeFullyKnownTokens: enabled, // mature words are coloured (green)
         dictionaryTokenStatusColors: STATUS.map((s) => s.color),
         dictionaryTokenStatusConfig: enabled ? STATUS : STATUS.map((s, i) => ({...s, display: i < 5})),
         dictionaryTokenAnnotationConfig: {

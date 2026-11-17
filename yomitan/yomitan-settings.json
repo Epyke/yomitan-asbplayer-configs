@@ -1,6 +1,6 @@
 {
   "version": 0,
-  "date": "2026-11-17T02:43:49.317Z",
+  "date": "2026-11-17T03:15:54.234Z",
   "options": {
     "version": 77,
     "profileCurrent": 0,
@@ -25,6 +25,8 @@
             "showPitchAccentDownstepNotation": true,
             "showPitchAccentPositionNotation": true,
             "termDisplayMode": "ruby",
+            "enableYomitanApi": true,
+            "yomitanApiServer": "http://127.0.0.1:19633",
             "enable": true,
             "debugInfo": false,
             "maxResults": 32,
@@ -59,8 +61,6 @@
             "fontFamily": "",
             "fontSize": 14,
             "lineHeight": "1.5",
-            "enableYomitanApi": false,
-            "yomitanApiServer": "http://127.0.0.1:19633",
             "yomitanApiAllowCssSanitizationBypass": false
           },
           "scanning": {

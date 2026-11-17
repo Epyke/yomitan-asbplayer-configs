@@ -13,19 +13,50 @@
   "track2Field": "",
   "track3Field": "",
   "ankiFieldSettings": {
-    "sentence": { "order": 1, "display": true },
-    "definition": { "order": 2, "display": true },
-    "word": { "order": 3, "display": true },
-    "audio": { "order": 4, "display": true },
-    "image": { "order": 5, "display": true },
-    "source": { "order": 6, "display": true },
-    "url": { "order": 7, "display": false },
-    "track1": { "order": 8, "display": false },
-    "track2": { "order": 9, "display": false },
-    "track3": { "order": 10, "display": false }
+    "sentence": {
+      "order": 1,
+      "display": true
+    },
+    "definition": {
+      "order": 2,
+      "display": true
+    },
+    "word": {
+      "order": 3,
+      "display": true
+    },
+    "audio": {
+      "order": 4,
+      "display": true
+    },
+    "image": {
+      "order": 5,
+      "display": true
+    },
+    "source": {
+      "order": 6,
+      "display": true
+    },
+    "url": {
+      "order": 7,
+      "display": false
+    },
+    "track1": {
+      "order": 8,
+      "display": false
+    },
+    "track2": {
+      "order": 9,
+      "display": false
+    },
+    "track3": {
+      "order": 10,
+      "display": false
+    }
   },
-  "tags": ["asbplayer"],
-
+  "tags": [
+    "asbplayer"
+  ],
   "audioPaddingStart": 100,
   "audioPaddingEnd": 500,
   "preferMp3": true,
@@ -35,7 +66,6 @@
   "maxImageHeight": 0,
   "surroundingSubtitlesCountRadius": 2,
   "surroundingSubtitlesTimeRadius": 10000,
-
   "streamingDisplaySubtitles": true,
   "streamingRecordMedia": true,
   "streamingTakeScreenshot": true,
@@ -44,7 +74,6 @@
   "streamingScreenshotDelay": 1000,
   "streamingSubsDragAndDrop": true,
   "streamingMediaFragmentFormat": "jpeg",
-
   "subtitleSize": 40,
   "subtitleColor": "#ffffff",
   "subtitleThickness": 700,
@@ -58,9 +87,1093 @@
   "subtitleBlur": false,
   "subtitlePositionOffset": 75,
   "subtitleAlignment": "bottom",
-
   "rememberSubtitleOffset": true,
   "alwaysPlayOnSubtitleRepeat": true,
   "copyToClipboardOnMine": false,
-  "themeType": "dark"
+  "themeType": "dark",
+  "dictionaryTracks": [
+    {
+      "dictionaryColorizeSubtitles": true,
+      "dictionaryAutoGenerateStatistics": false,
+      "dictionaryColorizeOnHoverOnly": false,
+      "dictionaryHighlightOnHover": true,
+      "dictionaryTokenMatchStrategy": "ANY_FORM_COLLECTED",
+      "dictionaryMatchAcrossScripts": true,
+      "dictionaryTokenMatchStrategyPriority": "EXACT",
+      "dictionaryYomitanUrl": "http://127.0.0.1:19633",
+      "dictionaryYomitanParser": "scanning-parser",
+      "dictionaryYomitanScanLength": 16,
+      "dictionaryTokenReadingAnnotation": "NEVER",
+      "dictionaryDisplayIgnoredTokenReadings": false,
+      "dictionaryTokenFrequencyAnnotation": "NEVER",
+      "dictionaryAnkiDecks": [
+        "Mining",
+        "Mining_temp",
+        "Kaishi 1.5k"
+      ],
+      "dictionaryAnkiWordFields": [
+        "Expression",
+        "Word"
+      ],
+      "dictionaryAnkiSentenceFields": [
+        "Sentence"
+      ],
+      "dictionaryAnkiSentenceTokenMatchStrategy": "EXACT_FORM_COLLECTED",
+      "dictionaryAnkiMatureCutoff": 21,
+      "dictionaryAnkiTreatSuspended": "NORMAL",
+      "dictionaryWaniKaniApiToken": "",
+      "dictionaryTokenStyling": "UNDERLINE",
+      "dictionaryTokenStylingThickness": 3,
+      "dictionaryColorizeFullyKnownTokens": false,
+      "dictionaryTokenStatusColors": [
+        "#FF0000",
+        "#FFA500",
+        "#FFFF00",
+        "#00FF00",
+        "#3399FF",
+        "#FFFFFF"
+      ],
+      "dictionaryTokenStatusConfig": [
+        {
+          "display": true,
+          "color": "#FF0000",
+          "alpha": "FF"
+        },
+        {
+          "display": true,
+          "color": "#FFA500",
+          "alpha": "FF"
+        },
+        {
+          "display": true,
+          "color": "#FFFF00",
+          "alpha": "FF"
+        },
+        {
+          "display": true,
+          "color": "#00FF00",
+          "alpha": "FF"
+        },
+        {
+          "display": true,
+          "color": "#3399FF",
+          "alpha": "FF"
+        },
+        {
+          "display": false,
+          "color": "#FFFFFF",
+          "alpha": "FF"
+        }
+      ],
+      "dictionaryTokenAnnotationConfig": {
+        "colorizeEnabled": true,
+        "video": {
+          "color": {
+            "onHoverEnabled": false,
+            "size": 1
+          },
+          "reading": {
+            "onHoverEnabled": false,
+            "size": 0.5
+          },
+          "frequency": {
+            "onHoverEnabled": false,
+            "size": 0.3
+          },
+          "gloss": {
+            "onHoverEnabled": true,
+            "size": 0.5
+          },
+          "pitchAccent": {
+            "onHoverEnabled": true,
+            "size": 0.1
+          }
+        },
+        "subtitlePlayer": {
+          "color": {
+            "onHoverEnabled": false,
+            "size": 1
+          },
+          "reading": {
+            "onHoverEnabled": false,
+            "size": 0.5
+          },
+          "frequency": {
+            "onHoverEnabled": false,
+            "size": 0.5
+          },
+          "gloss": {
+            "onHoverEnabled": true,
+            "size": 0.5
+          },
+          "pitchAccent": {
+            "onHoverEnabled": true,
+            "size": 0.1
+          }
+        },
+        "onStatuses": [
+          {
+            "reading": false,
+            "frequency": false,
+            "gloss": false,
+            "pitchAccent": false
+          },
+          {
+            "reading": false,
+            "frequency": false,
+            "gloss": false,
+            "pitchAccent": false
+          },
+          {
+            "reading": false,
+            "frequency": false,
+            "gloss": false,
+            "pitchAccent": false
+          },
+          {
+            "reading": false,
+            "frequency": false,
+            "gloss": false,
+            "pitchAccent": false
+          },
+          {
+            "reading": false,
+            "frequency": false,
+            "gloss": false,
+            "pitchAccent": false
+          },
+          {
+            "reading": false,
+            "frequency": false,
+            "gloss": false,
+            "pitchAccent": false
+          }
+        ],
+        "onStates": [
+          {
+            "reading": false,
+            "frequency": false,
+            "gloss": false,
+            "pitchAccent": false
+          }
+        ]
+      },
+      "dictionaryPlaybackConfig": {
+        "selectOnPause": {
+          "onStatuses": [
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            }
+          ],
+          "onStates": [
+            {
+              "enabled": false
+            }
+          ]
+        },
+        "autoPause": {
+          "onStatuses": [
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            }
+          ],
+          "onStates": [
+            {
+              "enabled": false
+            }
+          ],
+          "rules": {
+            "minWords": 0,
+            "maxWords": 0,
+            "minFrequency": 0,
+            "maxFrequency": 0
+          }
+        },
+        "condensed": {
+          "onStatuses": [
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            }
+          ],
+          "onStates": [
+            {
+              "enabled": false
+            }
+          ],
+          "rules": {
+            "minWords": 0,
+            "maxWords": 0,
+            "minFrequency": 0,
+            "maxFrequency": 0
+          }
+        },
+        "fastForward": {
+          "onStatuses": [
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            }
+          ],
+          "onStates": [
+            {
+              "enabled": false
+            }
+          ],
+          "rules": {
+            "minWords": 0,
+            "maxWords": 0,
+            "minFrequency": 0,
+            "maxFrequency": 0
+          },
+          "rateByComprehension": {
+            "enabled": false,
+            "minimumPercent": 60
+          }
+        },
+        "repeat": {
+          "onStatuses": [
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            }
+          ],
+          "onStates": [
+            {
+              "enabled": false
+            }
+          ],
+          "rules": {
+            "minWords": 0,
+            "maxWords": 0,
+            "minFrequency": 0,
+            "maxFrequency": 0
+          }
+        },
+        "wordVisibility": {
+          "onStatuses": [
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            }
+          ],
+          "onStates": [
+            {
+              "enabled": false
+            }
+          ],
+          "rules": {
+            "minWords": 0,
+            "maxWords": 0,
+            "minFrequency": 0,
+            "maxFrequency": 0
+          },
+          "hideWordsIndividuallyUntilThreshold": true,
+          "wholeSubtitleMatchThreshold": 1
+        }
+      }
+    },
+    {
+      "dictionaryColorizeSubtitles": false,
+      "dictionaryAutoGenerateStatistics": false,
+      "dictionaryColorizeOnHoverOnly": false,
+      "dictionaryHighlightOnHover": true,
+      "dictionaryTokenMatchStrategy": "ANY_FORM_COLLECTED",
+      "dictionaryMatchAcrossScripts": true,
+      "dictionaryTokenMatchStrategyPriority": "EXACT",
+      "dictionaryYomitanUrl": "http://127.0.0.1:19633",
+      "dictionaryYomitanParser": "scanning-parser",
+      "dictionaryYomitanScanLength": 16,
+      "dictionaryTokenReadingAnnotation": "NEVER",
+      "dictionaryDisplayIgnoredTokenReadings": false,
+      "dictionaryTokenFrequencyAnnotation": "NEVER",
+      "dictionaryAnkiDecks": [],
+      "dictionaryAnkiWordFields": [],
+      "dictionaryAnkiSentenceFields": [],
+      "dictionaryAnkiSentenceTokenMatchStrategy": "EXACT_FORM_COLLECTED",
+      "dictionaryAnkiMatureCutoff": 21,
+      "dictionaryAnkiTreatSuspended": "NORMAL",
+      "dictionaryWaniKaniApiToken": "",
+      "dictionaryTokenStyling": "UNDERLINE",
+      "dictionaryTokenStylingThickness": 3,
+      "dictionaryColorizeFullyKnownTokens": false,
+      "dictionaryTokenStatusColors": [
+        "#FF0000",
+        "#FFA500",
+        "#FFFF00",
+        "#00FF00",
+        "#3399FF",
+        "#FFFFFF"
+      ],
+      "dictionaryTokenStatusConfig": [
+        {
+          "display": true,
+          "color": "#FF0000",
+          "alpha": "FF"
+        },
+        {
+          "display": true,
+          "color": "#FFA500",
+          "alpha": "FF"
+        },
+        {
+          "display": true,
+          "color": "#FFFF00",
+          "alpha": "FF"
+        },
+        {
+          "display": true,
+          "color": "#00FF00",
+          "alpha": "FF"
+        },
+        {
+          "display": true,
+          "color": "#3399FF",
+          "alpha": "FF"
+        },
+        {
+          "display": false,
+          "color": "#FFFFFF",
+          "alpha": "FF"
+        }
+      ],
+      "dictionaryTokenAnnotationConfig": {
+        "colorizeEnabled": false,
+        "video": {
+          "color": {
+            "onHoverEnabled": false,
+            "size": 1
+          },
+          "reading": {
+            "onHoverEnabled": false,
+            "size": 0.5
+          },
+          "frequency": {
+            "onHoverEnabled": false,
+            "size": 0.3
+          },
+          "gloss": {
+            "onHoverEnabled": true,
+            "size": 0.5
+          },
+          "pitchAccent": {
+            "onHoverEnabled": true,
+            "size": 0.1
+          }
+        },
+        "subtitlePlayer": {
+          "color": {
+            "onHoverEnabled": false,
+            "size": 1
+          },
+          "reading": {
+            "onHoverEnabled": false,
+            "size": 0.5
+          },
+          "frequency": {
+            "onHoverEnabled": false,
+            "size": 0.5
+          },
+          "gloss": {
+            "onHoverEnabled": true,
+            "size": 0.5
+          },
+          "pitchAccent": {
+            "onHoverEnabled": true,
+            "size": 0.1
+          }
+        },
+        "onStatuses": [
+          {
+            "reading": false,
+            "frequency": false,
+            "gloss": false,
+            "pitchAccent": false
+          },
+          {
+            "reading": false,
+            "frequency": false,
+            "gloss": false,
+            "pitchAccent": false
+          },
+          {
+            "reading": false,
+            "frequency": false,
+            "gloss": false,
+            "pitchAccent": false
+          },
+          {
+            "reading": false,
+            "frequency": false,
+            "gloss": false,
+            "pitchAccent": false
+          },
+          {
+            "reading": false,
+            "frequency": false,
+            "gloss": false,
+            "pitchAccent": false
+          },
+          {
+            "reading": false,
+            "frequency": false,
+            "gloss": false,
+            "pitchAccent": false
+          }
+        ],
+        "onStates": [
+          {
+            "reading": false,
+            "frequency": false,
+            "gloss": false,
+            "pitchAccent": false
+          }
+        ]
+      },
+      "dictionaryPlaybackConfig": {
+        "selectOnPause": {
+          "onStatuses": [
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            }
+          ],
+          "onStates": [
+            {
+              "enabled": false
+            }
+          ]
+        },
+        "autoPause": {
+          "onStatuses": [
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            }
+          ],
+          "onStates": [
+            {
+              "enabled": false
+            }
+          ],
+          "rules": {
+            "minWords": 0,
+            "maxWords": 0,
+            "minFrequency": 0,
+            "maxFrequency": 0
+          }
+        },
+        "condensed": {
+          "onStatuses": [
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            }
+          ],
+          "onStates": [
+            {
+              "enabled": false
+            }
+          ],
+          "rules": {
+            "minWords": 0,
+            "maxWords": 0,
+            "minFrequency": 0,
+            "maxFrequency": 0
+          }
+        },
+        "fastForward": {
+          "onStatuses": [
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            }
+          ],
+          "onStates": [
+            {
+              "enabled": false
+            }
+          ],
+          "rules": {
+            "minWords": 0,
+            "maxWords": 0,
+            "minFrequency": 0,
+            "maxFrequency": 0
+          },
+          "rateByComprehension": {
+            "enabled": false,
+            "minimumPercent": 60
+          }
+        },
+        "repeat": {
+          "onStatuses": [
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            }
+          ],
+          "onStates": [
+            {
+              "enabled": false
+            }
+          ],
+          "rules": {
+            "minWords": 0,
+            "maxWords": 0,
+            "minFrequency": 0,
+            "maxFrequency": 0
+          }
+        },
+        "wordVisibility": {
+          "onStatuses": [
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            }
+          ],
+          "onStates": [
+            {
+              "enabled": false
+            }
+          ],
+          "rules": {
+            "minWords": 0,
+            "maxWords": 0,
+            "minFrequency": 0,
+            "maxFrequency": 0
+          },
+          "hideWordsIndividuallyUntilThreshold": true,
+          "wholeSubtitleMatchThreshold": 1
+        }
+      }
+    },
+    {
+      "dictionaryColorizeSubtitles": false,
+      "dictionaryAutoGenerateStatistics": false,
+      "dictionaryColorizeOnHoverOnly": false,
+      "dictionaryHighlightOnHover": true,
+      "dictionaryTokenMatchStrategy": "ANY_FORM_COLLECTED",
+      "dictionaryMatchAcrossScripts": true,
+      "dictionaryTokenMatchStrategyPriority": "EXACT",
+      "dictionaryYomitanUrl": "http://127.0.0.1:19633",
+      "dictionaryYomitanParser": "scanning-parser",
+      "dictionaryYomitanScanLength": 16,
+      "dictionaryTokenReadingAnnotation": "NEVER",
+      "dictionaryDisplayIgnoredTokenReadings": false,
+      "dictionaryTokenFrequencyAnnotation": "NEVER",
+      "dictionaryAnkiDecks": [],
+      "dictionaryAnkiWordFields": [],
+      "dictionaryAnkiSentenceFields": [],
+      "dictionaryAnkiSentenceTokenMatchStrategy": "EXACT_FORM_COLLECTED",
+      "dictionaryAnkiMatureCutoff": 21,
+      "dictionaryAnkiTreatSuspended": "NORMAL",
+      "dictionaryWaniKaniApiToken": "",
+      "dictionaryTokenStyling": "UNDERLINE",
+      "dictionaryTokenStylingThickness": 3,
+      "dictionaryColorizeFullyKnownTokens": false,
+      "dictionaryTokenStatusColors": [
+        "#FF0000",
+        "#FFA500",
+        "#FFFF00",
+        "#00FF00",
+        "#3399FF",
+        "#FFFFFF"
+      ],
+      "dictionaryTokenStatusConfig": [
+        {
+          "display": true,
+          "color": "#FF0000",
+          "alpha": "FF"
+        },
+        {
+          "display": true,
+          "color": "#FFA500",
+          "alpha": "FF"
+        },
+        {
+          "display": true,
+          "color": "#FFFF00",
+          "alpha": "FF"
+        },
+        {
+          "display": true,
+          "color": "#00FF00",
+          "alpha": "FF"
+        },
+        {
+          "display": true,
+          "color": "#3399FF",
+          "alpha": "FF"
+        },
+        {
+          "display": false,
+          "color": "#FFFFFF",
+          "alpha": "FF"
+        }
+      ],
+      "dictionaryTokenAnnotationConfig": {
+        "colorizeEnabled": false,
+        "video": {
+          "color": {
+            "onHoverEnabled": false,
+            "size": 1
+          },
+          "reading": {
+            "onHoverEnabled": false,
+            "size": 0.5
+          },
+          "frequency": {
+            "onHoverEnabled": false,
+            "size": 0.3
+          },
+          "gloss": {
+            "onHoverEnabled": true,
+            "size": 0.5
+          },
+          "pitchAccent": {
+            "onHoverEnabled": true,
+            "size": 0.1
+          }
+        },
+        "subtitlePlayer": {
+          "color": {
+            "onHoverEnabled": false,
+            "size": 1
+          },
+          "reading": {
+            "onHoverEnabled": false,
+            "size": 0.5
+          },
+          "frequency": {
+            "onHoverEnabled": false,
+            "size": 0.5
+          },
+          "gloss": {
+            "onHoverEnabled": true,
+            "size": 0.5
+          },
+          "pitchAccent": {
+            "onHoverEnabled": true,
+            "size": 0.1
+          }
+        },
+        "onStatuses": [
+          {
+            "reading": false,
+            "frequency": false,
+            "gloss": false,
+            "pitchAccent": false
+          },
+          {
+            "reading": false,
+            "frequency": false,
+            "gloss": false,
+            "pitchAccent": false
+          },
+          {
+            "reading": false,
+            "frequency": false,
+            "gloss": false,
+            "pitchAccent": false
+          },
+          {
+            "reading": false,
+            "frequency": false,
+            "gloss": false,
+            "pitchAccent": false
+          },
+          {
+            "reading": false,
+            "frequency": false,
+            "gloss": false,
+            "pitchAccent": false
+          },
+          {
+            "reading": false,
+            "frequency": false,
+            "gloss": false,
+            "pitchAccent": false
+          }
+        ],
+        "onStates": [
+          {
+            "reading": false,
+            "frequency": false,
+            "gloss": false,
+            "pitchAccent": false
+          }
+        ]
+      },
+      "dictionaryPlaybackConfig": {
+        "selectOnPause": {
+          "onStatuses": [
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            }
+          ],
+          "onStates": [
+            {
+              "enabled": false
+            }
+          ]
+        },
+        "autoPause": {
+          "onStatuses": [
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            }
+          ],
+          "onStates": [
+            {
+              "enabled": false
+            }
+          ],
+          "rules": {
+            "minWords": 0,
+            "maxWords": 0,
+            "minFrequency": 0,
+            "maxFrequency": 0
+          }
+        },
+        "condensed": {
+          "onStatuses": [
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            }
+          ],
+          "onStates": [
+            {
+              "enabled": false
+            }
+          ],
+          "rules": {
+            "minWords": 0,
+            "maxWords": 0,
+            "minFrequency": 0,
+            "maxFrequency": 0
+          }
+        },
+        "fastForward": {
+          "onStatuses": [
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            }
+          ],
+          "onStates": [
+            {
+              "enabled": false
+            }
+          ],
+          "rules": {
+            "minWords": 0,
+            "maxWords": 0,
+            "minFrequency": 0,
+            "maxFrequency": 0
+          },
+          "rateByComprehension": {
+            "enabled": false,
+            "minimumPercent": 60
+          }
+        },
+        "repeat": {
+          "onStatuses": [
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            }
+          ],
+          "onStates": [
+            {
+              "enabled": false
+            }
+          ],
+          "rules": {
+            "minWords": 0,
+            "maxWords": 0,
+            "minFrequency": 0,
+            "maxFrequency": 0
+          }
+        },
+        "wordVisibility": {
+          "onStatuses": [
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            },
+            {
+              "enabled": false
+            }
+          ],
+          "onStates": [
+            {
+              "enabled": false
+            }
+          ],
+          "rules": {
+            "minWords": 0,
+            "maxWords": 0,
+            "minFrequency": 0,
+            "maxFrequency": 0
+          },
+          "hideWordsIndividuallyUntilThreshold": true,
+          "wholeSubtitleMatchThreshold": 1
+        }
+      }
+    }
+  ]
 }

@@ -80,6 +80,11 @@ const profileOptions = {
         showPitchAccentDownstepNotation: true,
         showPitchAccentPositionNotation: true,
         termDisplayMode: 'ruby',
+        // Local API used by asbplayer to split subtitles into words for Anki-knowledge colouring.
+        // Needs the yomitan-api native host (see README) and the "nativeMessaging" permission,
+        // which Chrome only grants when you flip this switch by hand in Yomitan's settings.
+        enableYomitanApi: true,
+        yomitanApiServer: 'http://127.0.0.1:19633',
     },
     scanning: {
         // Default: hold Shift and hover (works great on asbplayer subtitles)

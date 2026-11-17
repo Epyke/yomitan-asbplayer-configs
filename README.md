@@ -32,6 +32,24 @@ Other asbplayer shortcuts: `Ctrl+Shift+X` mine via asbplayer dialog · `←/→`
    **Check it worked:** Anki section shows card format *Lapis* → deck *Mining*, model *Lapis*; popup theme is *Dark*; Jitendex is first in the dictionary list.
 6. **asbplayer settings**: click the asbplayer icon → *Settings* → *Misc* → **Import settings** → `asbplayer/asbplayer-settings.json`.
 7. Test: Yomitan settings → *Anki* → the status should say *Connected*; hover a word and click ➕.
+8. **Word colouring (optional, see below)**: install Python 3, put [yomitan-api](https://github.com/yomidevs/yomitan-api) in `C:\Users\<you>\yomitan-api`, run `python install_yomitan_api.py` there (choose **3: chrome**, press Enter), then in Yomitan settings turn on *advanced* (bottom-left), *General* → **Enable Yomitan API** → accept Chrome's permission prompt → *More…* → **Test**.
+
+## Subtitle colouring from Anki knowledge
+
+asbplayer underlines each subtitle word based on whether you already have it in Anki. It uses Yomitan (through the local Yomitan API at `127.0.0.1:19633`) to split sentences into words, and AnkiConnect to look up your cards.
+
+| Colour | Meaning |
+|---|---|
+| 🔴 red | not in any of your decks |
+| 🟠 orange | in Anki but never studied (new card) |
+| 🟡 yellow | learning |
+| 🟢 green | just graduated |
+| 🔵 blue | young (interval < 21 days) |
+| *(no mark)* | mature (≥ 21 days) — you know it |
+
+Decks checked: `Mining`, `Mining_temp`, `Kaishi 1.5k`. Word fields: `Expression`, `Word`. Sentence field: `Sentence`.
+To change these, edit the top of `asbplayer/add-dictionary-tracks.mjs`, run `node asbplayer/add-dictionary-tracks.mjs`, and re-import `asbplayer-settings.json`. You can also change them in asbplayer → Settings → *Dictionary*.
+Anki and Chrome must both be running for the colours to appear.
 
 ## Yomitan → Lapis field mapping
 
@@ -77,5 +95,6 @@ anki/lapis/                    Lapis 1.7.0 templates, CSS, fields, .apkg
 yomitan/yomitan-settings.json  Yomitan backup file (import this)
 yomitan/build-settings.mjs     source of the Yomitan settings (edit + regenerate)
 asbplayer/asbplayer-settings.json  asbplayer settings (import this)
+asbplayer/add-dictionary-tracks.mjs  regenerates the word-colouring section
 dictionaries/download.ps1      downloads the dictionary zips (zips are git-ignored)
 ```

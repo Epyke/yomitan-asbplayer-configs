@@ -6,7 +6,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 
-const DECKS = ['Mining', 'Mining_temp', 'Kaishi 1.5k'];
+const DECKS = ['Mining', 'Kaishi 1.5k'];
 const WORD_FIELDS = ['Expression', 'Word'];   // Lapis / Mining-JP use Expression, Kaishi uses Word
 const SENTENCE_FIELDS = ['Sentence'];          // all three note types
 

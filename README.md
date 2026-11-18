@@ -45,7 +45,7 @@ asbplayer underlines each subtitle word based on whether you already have it in 
 | 🔵 blue | learning, just graduated, or young (interval < 21 days) |
 | 🟢 green | mature (≥ 21 days) — you know it |
 
-Decks checked: `Mining`, `Mining_temp`, `Kaishi 1.5k`. Word fields: `Expression`, `Word`. Sentence field: `Sentence`.
+Decks checked: `Mining`, `Kaishi 1.5k`. Word fields: `Expression`, `Word`. Sentence field: `Sentence`.
 To change these, edit the top of `asbplayer/add-dictionary-tracks.mjs`, run `node asbplayer/add-dictionary-tracks.mjs`, and re-import `asbplayer-settings.json`. You can also change them in asbplayer → Settings → *Dictionary*.
 Anki and Chrome must both be running for the colours to appear.
 
